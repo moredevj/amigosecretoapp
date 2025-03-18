@@ -5,6 +5,8 @@ let listaDeAmigos = [];
 let ulListaDeAmigos = document.getElementById('listaAmigos');
 let ulResultado = document.getElementById('resultado');
 
+
+
 function agregarAmigo() {
     if (!inputAmigo.value){
         alert("Por favor, inserte un nombre.");
@@ -41,5 +43,5 @@ function asignaTextos(elementoHTML, textual) {
     titulo.innerHTML = textual;
 }
 
-asignaTextos('h1','Juego del AmIgO SECRETO');
+asignaTextos('h1','Juego del Amigo secreto');
 asignaTextos('h2','Ingrese el nombre de un amigo');
