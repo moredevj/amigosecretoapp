@@ -26,15 +26,15 @@ function agregarAmigo() {
 
 function sortearAmigo() {
     console.log(listaDeAmigos);
-    if(listaDeAmigos.length>=0){
+    if(listaDeAmigos.length===0){
+        alert('No hay amigos para sortear');
+        return;
+    } else{
         numeroAleatorio = Math.floor(Math.random()*listaDeAmigos.length);
         amigoSecreto = listaDeAmigos[numeroAleatorio];
         console.log(numeroAleatorio);
         //ulResultado.textContent = 'Amigo Secreto sorteado es: ' + amigoSecreto;
         ulResultado.innerHTML = 'Amigo Secreto sorteado es: ' + amigoSecreto;
-
-    } else{
-        alert('No hay amigos para sortear');
     }
 };
 
